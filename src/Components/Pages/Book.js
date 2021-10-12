@@ -5,6 +5,7 @@ import { GetMovie } from "../../state/actions/GetMovie";
 import { UserDetails } from "../../state/actions/UserDetails";
 
 const Book = ({ match, Movie: { movie }, GetMovie, UserDetails }) => {
+    const [click, setClick] = useState(false);
     const [form, setForm] = useState({
         name: "",
         day: "",
@@ -25,6 +26,7 @@ const Book = ({ match, Movie: { movie }, GetMovie, UserDetails }) => {
 
     const onSubmit = (e) => {
         e.preventDefault();
+        setClick(true);
         UserDetails(form);
     };
 
@@ -81,6 +83,11 @@ const Book = ({ match, Movie: { movie }, GetMovie, UserDetails }) => {
                         >
                             Book
                         </button>
+                        {click && (
+                            <div className="mt-6 text-lg mx-auto">
+                                Thank You! Show Booked
+                            </div>
+                        )}
                     </form>
                 </div>
             )}
