@@ -7,9 +7,9 @@ const Box = ({ movie }) => {
 
   return (
     <div className="mx-16 my-6 bg-blue-500 p-4 w-2/5">
-      <div className="flex justify-evenly">
+      <div className="flex justify-evenly place-items-center h-full">
         <img className="" src={movie.show.image?.medium} alt="movie"></img>
-        <div className="px-10 py-4 relative">
+        <div className="px-10 py-4 relative h-full">
           <div className="text-3xl">{movie.show.name}</div>
           <div className="py-2">Rating : {movie.show.rating.average}</div>
           <div className="py-2">Running status : {movie.show.status}</div>
