@@ -21,12 +21,12 @@ https://movie-tickets-zeta.vercel.app/
 
 #### Front Page
 
-![Front Page](./images/movie-tickets_1)
+![Front Page](./images/movie-tickets_1.png)
 
 #### More Deatils Page
 
-![More Details Page](./images/movie-tickets_2)
+![More Details Page](./images/movie-tickets_2.png)
 
 #### Booking Page
 
-![Booking Page](./images/movie-tickets_3)
+![Booking Page](./images/movie-tickets_3.png)
